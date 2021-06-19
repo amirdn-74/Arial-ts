@@ -1,0 +1,11 @@
+.account-button {
+  display: flex;
+  color: $gray;
+  padding: 0.8rem 1.1rem;
+  border: 1px solid $gray;
+  border-radius: 5px;
+
+  .material-icons-outlined {
+    margin-right: 0.5rem;
+  }
+}

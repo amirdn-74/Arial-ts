@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $light_gray;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  outline: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.material-icons-outlined {
+  font-size: 2.5rem;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 5px;
+  background: $white;
+  border: 1px solid $light_gray;
+  box-shadow: 0 0 5px rgba($black, 0.15);
+}
+
+.account-card {
+  margin: 0 auto;
+  width: 33.33%;
+  margin-top: 5rem;
+}
+
+.account-card__header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: $gray;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.account-card__body {
+  margin-top: 1.5rem;
+}
+
+.account-card__action {
+  font-size: 1.6rem;
+  margin: 0.5rem;
+  margin-left: 1rem;
+}

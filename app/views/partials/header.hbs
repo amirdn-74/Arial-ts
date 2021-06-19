@@ -1,0 +1,36 @@
+<header class="header">
+  <div class="header__top">
+    <div class="header__left">
+      <div class="header__brand">
+        <a href="/"><span class="brand-color">Shopi</span>Fied</a>
+      </div>
+      <div class="header__search">
+        <input
+          type="text"
+          class="header__search-input input"
+          placeholder="find what you want..."
+        />
+        <button class="btn btn-primary btn-small">
+          <span class="material-icons-outlined">
+            search
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header__right">
+      <a href="/register" class="account-button">
+        <span class="material-icons-outlined">person</span>
+        your account
+      </a>
+
+      <a href="#" class="header__cart">
+        <div class="cart__quantity">1</div>
+        <span class="material-icons-outlined">shopping_cart</span>
+        cart
+      </a>
+    </div>
+  </div>
+
+  {{> navbar}}
+</header>

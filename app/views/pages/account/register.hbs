@@ -1,0 +1,64 @@
+<div class="account-card">
+  <section class="card">
+    <header class="account-card__header">
+      Create New Account
+    </header>
+    <div class="account-card__body">
+      <form method="POST" action="/register">
+        <div class="input-field">
+          <label for="phone" class="form-label">
+            <span class="material-icons-outlined form-icon">
+              phone
+            </span>
+            Phone
+          </label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            value="{{old field="phone"}}"
+            class="input form-input"
+          />
+          {{{error field="phone"}}}
+        </div>
+        <div class="input-field">
+          <label for="password" class="form-label">
+            <span class="material-icons-outlined form-icon">
+              lock
+            </span>
+            Password
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="input form-input"
+          />
+        </div>
+        <div class="input-field">
+          <label for="confirm-password" class="form-label">
+            <span class="material-icons-outlined form-icon">
+              lock
+            </span>
+            Confirm Password
+          </label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm_password"
+            class="input form-input"
+          />
+        </div>
+        <div class="input-field">
+          <button class="btn btn-primary form-button">
+            Create Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="account-card__action">
+    have an account?
+    <a href="#">login here</a>
+  </div>
+</div>

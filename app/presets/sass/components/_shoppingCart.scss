@@ -1,0 +1,23 @@
+.header__cart {
+  color: $gray;
+  display: flex;
+  position: relative;
+  margin-left: 2rem;
+
+  .material-icons-outlined {
+    margin-right: 0.5rem;
+  }
+
+  .cart__quantity {
+    position: absolute;
+    font-size: 1.1rem;
+    background: $primary;
+    color: $white;
+    z-index: 1;
+    padding: 2px 5px;
+    border-radius: 2rem;
+    border: 3px solid $white;
+    left: -8px;
+    top: -8px;
+  }
+}

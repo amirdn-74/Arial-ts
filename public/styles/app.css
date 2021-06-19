@@ -1,0 +1,295 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f3f5;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  outline: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.material-icons-outlined {
+  font-size: 2.5rem;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 5px;
+  background: #ffffff;
+  border: 1px solid #f2f3f5;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.account-card {
+  margin: 0 auto;
+  width: 33.33%;
+  margin-top: 5rem;
+}
+
+.account-card__header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #777777;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.account-card__body {
+  margin-top: 1.5rem;
+}
+
+.account-card__action {
+  font-size: 1.6rem;
+  margin: 0.5rem;
+  margin-left: 1rem;
+}
+
+.navbar {
+  margin-top: 2rem;
+  height: 3.8rem;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+
+.navbar__menu li {
+  height: 100%;
+  float: left;
+}
+.navbar__menu li a {
+  height: 100%;
+  display: block;
+  display: flex;
+  align-items: center;
+  padding: 0 1.8rem;
+  color: #777777;
+  position: relative;
+}
+.navbar__menu li a span {
+  z-index: 2;
+  transition: color 0.2s;
+}
+.navbar__menu li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: #b146f0;
+  transition: width 0.2s;
+  width: 0;
+}
+.navbar__menu li a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background: #b146f0;
+  transition: width 0.2s;
+  width: 0;
+}
+.navbar__menu li a:hover span {
+  color: #ffffff;
+}
+.navbar__menu li a:hover::before {
+  width: 10%;
+}
+.navbar__menu li a:hover::after {
+  width: 90%;
+}
+
+.header {
+  padding: 1.5rem 3rem;
+  padding-bottom: 0;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+}
+
+.header__top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.header__brand a {
+  color: #777777;
+}
+.header__brand span.brand-color {
+  color: #b146f0;
+}
+
+.header__left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__search {
+  border: 2px solid #ccc;
+  background: #f7f7f7;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-left: 4rem;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.header__search-input {
+  font-size: 2rem;
+  margin-right: 1rem;
+  background: transparent;
+}
+.header__search-input::placeholder {
+  color: #c5c5c5;
+}
+
+.account-button {
+  display: flex;
+  color: #777777;
+  padding: 0.8rem 1.1rem;
+  border: 1px solid #777777;
+  border-radius: 5px;
+}
+.account-button .material-icons-outlined {
+  margin-right: 0.5rem;
+}
+
+.header__cart {
+  color: #777777;
+  display: flex;
+  position: relative;
+  margin-left: 2rem;
+}
+.header__cart .material-icons-outlined {
+  margin-right: 0.5rem;
+}
+.header__cart .cart__quantity {
+  position: absolute;
+  font-size: 1.1rem;
+  background: #b146f0;
+  color: #ffffff;
+  z-index: 1;
+  padding: 2px 5px;
+  border-radius: 2rem;
+  border: 3px solid #ffffff;
+  left: -8px;
+  top: -8px;
+}
+
+.carousel {
+  width: 100%;
+  height: 50rem;
+}
+
+.btn {
+  border: 0;
+  padding: 0.7rem 1.3rem;
+  border-radius: 5px;
+}
+
+.btn-small {
+  padding: 0.4rem 1.9rem;
+}
+
+.btn-primary {
+  background: #b146f0;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn-primary:active {
+  background: #a72eee;
+}
+
+.form-button {
+  height: 4rem;
+  font-size: 1.7rem;
+}
+
+.input {
+  border: 0;
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.input-field .field-error {
+  color: #ff3535;
+  font-size: 1.5rem;
+  padding-top: 0.2rem;
+  padding-left: 0.5rem;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 1.7rem;
+  color: #777777;
+  display: flex;
+  align-items: flex-end;
+}
+
+.form-icon {
+  margin-right: 1rem;
+  font-size: 2.2rem;
+}
+
+.form-input {
+  border: 2px solid #ccc;
+  height: 4rem;
+  font-size: 1.7rem;
+  border-radius: 5px;
+}
+
+.form-input:focus {
+  border-color: #b146f0;
+}
+
+/*# sourceMappingURL=app.css.map */
